@@ -50,15 +50,31 @@ article {
 
 <article>
 
-  <h2>La Quebrada</h2>
-  <p>Mezcal, Grapefruit, Agave</p>
+  <div>
+    <h2>La Quebrada</h2>
+    <p>Mezcal, Grapefruit, Agave</p>
+  </div>
 
-  <h2>La Dotta Spritz</h2>
-  <p>Lambrusco, Bitters, Castelevetrano</p>
+  <div>
+    <h2>La Dotta Spritz</h2>
+    <p>Lambrusco, Bitters, Castelevetrano</p>
+  </div>
 
-  <h2>El Classico</h2>
-  <p>Aperol, Blood Orange</p>
+  <div>
+    <h2>El Classico</h2>
+    <p>Aperol, Blood Orange</p>
+  </div>
 
 </article>
 
 <img src="qr.png" class="qr" width="150" />
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script>
+
+d3.timer(function(t) {
+  d3.selectAll("article > div").style("transform", (d, i) => `rotate(${20 * Math.sin(t / 5000 + i)}deg)`);
+})
+
+</script>
