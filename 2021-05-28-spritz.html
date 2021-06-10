@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html class="ocks-org do-not-copy">
+<meta charset="utf-8">
+<meta name="viewport" content="width=760">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Popham Spritz Bar</title>
+
+<style>
+
+body {
+  padding: 3rem;
+  font-size: 1.5em;
+}
+
+h2 {
+  margin: 2em 0 0 0;
+  font-size: 2em;
+  font-family: "Times New Roman", "Times", serif;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+article {
+  max-width: 16em;
+  margin: 0 auto;
+  padding: 5em 0;
+}
+
+.logo {
+  position: fixed;
+  z-index: -1;
+  top: 1rem;
+  left: 1rem;
+}
+
+.qr {
+  display: block;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+</style>
+
+<img src="logo.png" width="200" class="logo" />
+
+<article>
+
+  <div>
+    <h2>La Quebrada</h2>
+    <p>Mezcal, Grapefruit, Agave</p>
+  </div>
+
+  <div>
+    <h2>La Dotta Spritz</h2>
+    <p>Lambrusco, Bitters, Castelevetrano</p>
+  </div>
+
+  <div>
+    <h2>El Classico</h2>
+    <p>Aperol, Blood Orange</p>
+  </div>
+
+</article>
+
+<img src="qr.png" class="qr" width="150" />
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script>
+
+d3.timer(function(t) {
+  d3.selectAll("article > div").style("transform", (d, i) => `rotate(${20 * Math.sin(t / 5000 + i)}deg)`);
+})
+
+</script>
