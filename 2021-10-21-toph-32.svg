@@ -1,0 +1,18 @@
+<svg width="978" height="586.8" viewBox="0 -10 100 90" style="text-align: right; font-family: sans-serif; font-size: 4px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <path stroke="black" id="MyPath" d="M11.0029 25C10.8363 21 17.8029 12 27.0029 12C36.2029 12 42.0029 19 42.0029 25C42.0029 31 37.8029 35.5 27.0029 35.5C31.6696 35.3333 42.0029 37.3 42.0029 46.5C42.0029 55.7 33.5029 59 27.0029 59C23.3363 59.1667 11.0029 55.3 11.0029 46.5"/>
+      <path id="MyPath2" d="M58.5029 26.5C58.5029 26.5 62.5029 12 73.5029 12C84.5029 12 91.0029 24.5 85.0029 32C79.0029 39.5 58.5029 59 58.5029 59H91.5029" stroke="#FF0000"/>
+    </defs>
+    <text>
+      <textPath href="#MyPath">
+        Pesto toasts • Radishes • Cheese              board • Paccheri cacio e pepe 
+      </textPath>
+    </text>
+    <text>
+      <textPath href="#MyPath2">
+        Carrot salad • Roasted Brussel sprouts • Mamma       Chiara focaccia
+      </textPath>
+    </text>
+    <text x="50" y="0" text-anchor="middle">Mamma Chiara’s presents</text>
+    <text x="50" y="75" text-anchor="middle">Birthday cake • Ice cream</text>
+  </svg>
